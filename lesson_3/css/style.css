@@ -1,0 +1,62 @@
+@import 'reset.css';
+
+* {
+   color: black;
+}
+
+span {
+   color: red;
+}
+
+.menu__link {
+   color: green;
+}
+
+#purple {
+   /* color: purple; */
+}
+
+div.main__text {
+   /* color: greenyellow; */
+}
+
+.page__main.main {
+   /* color: red; */
+}
+
+.text,
+.lesson {
+   /* color: lawngreen; */
+}
+
+.lesson p {
+  /* color: red; */
+}
+
+.lesson .txt p {
+   color: gold;
+}
+
+.lesson * {
+   /* color: purple; */
+}
+
+.lesson > p {
+   color: violet;
+}
+
+.text ~ p {
+   color: coral;
+}
+
+.text + p {
+   color: palegreen;
+}
+
+/* [class*="__container"] {
+   color: silver;
+} */
+
+/* p {
+   color: purple !important;
+} */
