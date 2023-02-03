@@ -135,6 +135,7 @@ body {
 .purpose__label {
 }
 .purpose__title {
+   max-width: 400px;
 }
 .title {
 }
