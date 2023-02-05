@@ -1,3 +1,3 @@
 'use strict';
 
-// alert("Hola! Como estas?");
+alert("Hola! Como estas?");
