@@ -8,8 +8,6 @@ body {
    font-weight: 300;
    line-height: 1.8;
    color: #6c757d;
-   margin: 0 auto;
-   max-width: 1440px;
 }
 
 .wrapper {
@@ -43,10 +41,12 @@ body {
 }
 
 .image {
+   font-size: 0;
 }
 
 .image img {
    max-width: 100%;
+   font-size: 14px;
    transition: transform 0.3s ease 0s;
 }
 .image img:hover {
@@ -643,6 +643,6 @@ body {
    background-color: orange;
 }
 
-image {
+/* image {
    vertical-align: top;
-}
+} */

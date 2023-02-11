@@ -1,3 +1,1 @@
-'use strict';
-
-alert("Hola! Como estas?");
+'use strict'
