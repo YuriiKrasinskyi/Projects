@@ -398,6 +398,10 @@ body {
    font-size: 16px;
    line-height: 1.6;
    color: #f8f9fa;
+   transition: color 0.3s ease 0s;
+}
+.content-featured__title:hover {
+   color: #ccd5ae;
 }
 .content-featured__text {
 }
