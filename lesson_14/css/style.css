@@ -215,10 +215,16 @@ body {
    margin-bottom: 60px;
 }
 .categories__column {
-   flex: 1 1 33.333%;
+   flex: 0 1 33.333%;
    padding: 0px 15px;
 }
+@media (max-width: 767.98px) {
+   .categories__column {
+      flex: 1 1 auto;
+   }
+}
 .categories__item {
+   min-height: 100%;
    max-width: 393px;
 }
 .categories__item::before {
@@ -234,22 +240,7 @@ body {
 }
 .item-category__image {
    margin-bottom: 30px;
-}
-.item-category__image a {
-   position: relative;
-}
-.item-category__image p {
-   position: absolute;
-   top: 30px;
-   right: 30px;
-   padding: 3px 12px;
-   font-weight: 700;
-   font-size: 8px;
-   line-height: 2.5;
-   text-align: center;
-   color: #f8f9fa;
-   background-color: rgba(33, 37, 41, 0.3);
-   border-radius: 3px;
+   overflow: hidden;
 }
 .item-category__image img {
    max-width: 100%;
@@ -264,25 +255,43 @@ body {
 .content-caregory {
    display: flex;
    flex-direction: column;
+   align-items: start;
    gap: 15px;
-   line-height: 1.7;
-   color: #495057;
+   min-height: 100%;
+}
+.content-caregory__label {
+   position: absolute;
+   top: 30px;
+   right: 30px;
+   padding: 3px 12px;
+   font-weight: 700;
+   font-size: 8px;
+   line-height: 2.5;
+   text-align: center;
+   color: #f8f9fa;
+   background-color: rgba(33, 37, 41, 0.3);
+   border-radius: 3px;
 }
 // .content-caregory > *:not(:last-child) {
 //    margin-bottom: 15px;
 // }
+
 .content-caregory__date {
 }
 .content-caregory__title {
 }
 
 .content-caregory__text {
-   flex-grow: 1;
+   line-height: 1.7;
+   color: #495057;
+   flex: 1 1 auto;
 }
 .content-caregory__text:not(:last-child) {
    margin-bottom: 15px;
 }
 .content-caregory__name {
+   line-height: 1.7;
+   color: #495057;
 }
 .categories__button {
    font-weight: 500;
@@ -334,6 +343,9 @@ body {
    gap: 30px;
 }
 .item-featured {
+}
+.item-featured__image {
+   overflow: hidden;
 }
 .item-featured__image img {
    max-width: 100%;
@@ -428,8 +440,18 @@ body {
 }
 .world__items {
    display: flex;
-   gap: 30px;
    flex-wrap: wrap;
+   row-gap: 30px;
+   margin: 0px -15px;
+}
+.world__column {
+   flex: 0 1 25%;
+   padding: 0px 15px;
+}
+@media (max-width: 767.98px) {
+   .world__column {
+      flex: 1 1 auto;
+   }
 }
 .world__item {
    max-width: 287px;
