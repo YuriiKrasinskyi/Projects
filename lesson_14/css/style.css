@@ -145,9 +145,9 @@ body {
    border-bottom: 2px solid #ddbea9;
 }
 .header__body {
-   // display: flex;
-   // flex-direction: column;
-   // gap: 15px;
+    /* display: flex;
+    flex-direction: column;
+    gap: 15px; */
    padding-bottom: 118px;
 }
 .header__body > *:not(:last-child) {
@@ -292,9 +292,9 @@ body {
    visibility: visible;
    pointer-events: all;
 }
-// .content-caregory > *:not(:last-child) {
-//    margin-bottom: 15px;
-// }
+ /* .content-caregory > *:not(:last-child) {
+    margin-bottom: 15px;
+ } */
 
 .content-caregory__date {
 }
