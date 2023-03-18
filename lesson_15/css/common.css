@@ -1,0 +1,54 @@
+.title__label {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   color: #000000;
+   text-transform: uppercase;
+
+   display: flex;
+   align-items: center;
+   gap: 26px;
+}
+.title__label:not(:last-child) {
+   margin-bottom: 20px;
+}
+.title__label::after {
+   content: "";
+   top: 0;
+   right: 0;
+   border: 2px solid #000000;
+   width: 464px;
+   // transform: translateY(-50%);
+}
+.title__value {
+   max-width: 340px;
+
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 1.7;
+   color: #333333;
+}
+
+.button {
+   color: #fff;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.5;
+
+   background-color: #2c3878;
+   border: 1px solid #3c3c3c;
+   padding: 14px 32px;
+   transition: all 0.3s ease 0s;
+}
+.button:hover {
+   background-color: #fff;
+   color: #333333;
+}
+.button_white {
+   background-color: #fff;
+   color: #333333;
+}
+.button_white:hover {
+   background-color: #333;
+   color: #fff;
+}
