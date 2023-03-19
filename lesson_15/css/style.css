@@ -245,7 +245,7 @@ body {
 }
 .body-product__title.active,
 .body-product__title:hover {
-   color: #CCD5AE
+   color: #ccd5ae;
 }
 .body-product__title:not(:last-child) {
    margin-bottom: 24px;
@@ -502,24 +502,28 @@ body {
 }
 .gallery__items {
    display: grid;
+   grid-template: repeat(auto-fit, minmax(290px, 1fr));
    gap: 32px;
 }
+
 .gallery__item {
-   /* // position: relative;
-   // padding-bottom: 85%; */
+   /* position: relative;
+   padding: 0px 0px 90% 0px; */
 }
 .gallery__item img {
-   /* // position: absolute;
-   // top: 0;
-   // left: 0;
-   // width: 100%;
-   // height: 100%;
-   // object-fit: cover; */
-   max-width: 100%;
+   /* position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover; */
+   max-width: 100%; 
 }
 .gallery__item_big {
    grid-column: span 2;
 }
+
+
 
 /* ===================== */
 /* ===================== */
