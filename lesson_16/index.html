@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 16</title>
+</head>
+
+<body>
+   <main class="page">
+      <section class="page__main main">
+         <div class="main__wrapper wrapper wrapper_700">
+            <div class="main__title title">
+               <h1 class="title__value">Checkout</h1>
+               <div class="title__text">
+                  <p>There are 3 products in your cart</p>
+               </div>
+            </div>
+            <form action="#" class="main__form form-billing" method="get" enctype="multipart/form-data">
+               <h2 class="form-billing__title">Billing Details</h2>
+               <div class="form-billing__inputs inputs-billing">
+                  <div class="inputs-billing__firstname card">
+                     <input required autocomplete="off" type="text" name="form[]" data-error="Помилка"
+                        placeholder="First name*" class="card__input">
+                  </div>
+                  <div class="inputs-billing__lastname card">
+                     <input required autocomplete="off" type="text" name="form[]" data-error="Помилка"
+                        placeholder="Last name*" class="card__input">
+                  </div>
+                  <div class="inputs-billing__adress card">
+                     <input required autocomplete="off" type="text" name="form[]" data-error="Помилка"
+                        placeholder="Address*" class="card__input">
+                  </div>
+                  <div class="inputs-billing__adress">
+                     <input required autocomplete="off" type="text" name="form[]" data-error="Помилка"
+                        placeholder="Address line 2" class="card__input">
+                  </div>
+                  <div class="inputs-billing__country card">
+                     <select required class="card__list">
+                        <option value="">Country*</option>
+                        <option value="2">Italy</option>
+                        <option value="3">England</option>
+                        <option value="4">France</option>
+                        <option value="5">Germany</option>
+                        <option value="6">Ukraine</option>
+                     </select>
+                  </div>
+                  <div class="inputs-billing__city card">
+                     <input required autocomplete="off" type="text" name="form[]" data-error="Помилка"
+                        placeholder="City/Town*" class="card__input">
+                  </div>
+                  <div class="inputs-billing__post card">
+                     <input required autocomplete="off" type="text" name="form[]" data-error="Помилка"
+                        placeholder="Postcode / ZIP*" class="card__input">
+                  </div>
+                  <div class="inputs-billing__phone card">
+                     <input required autocomplete="off" type="tel" name="form[]" data-error="Помилка"
+                        placeholder="Phone*" class="card__input">
+                  </div>
+                  <div class="inputs-billing__post card">
+                     <input required autocomplete="off" type="text" name="form[]" data-error="Помилка"
+                        placeholder="Postcode / ZIP*" class="card__input">
+                  </div>
+                  <div class="inputs-billing__phone card">
+                     <input required autocomplete="off" type="tel" name="form[]" data-error="Помилка"
+                        placeholder="Phone*" class="card__input">
+                  </div>
+                  <div class="inputs-billing__textarea card">
+                     <textarea name="text" class="card__textarea" id="textarea"
+                        placeholder="Additional information"></textarea>
+                  </div>
+               </div>
+               <div class="form-billing__check">
+                  <div class="form-billing__checkbox checkbox">
+                     <input id="acc" checked type="checkbox" name="form[]" data-error="Помилка" class="checkbox__input">
+                     <label for="acc" class="checkbox__label">Create Account</label>
+                  </div>
+                  <div class="form-billing__checkbox">
+                     <input id="diff" type="checkbox" name="form[]" data-error="Помилка" class="checkbox__input">
+                     <label for="diff" class="checkbox__label">Ship to a different address? click bug??</label>
+                  </div>
+               </div>
+               <div class="form-billing__text">Apply Coupon to get discount!</div>
+               <div class="form-billing_discount discount">
+                  <input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Coupon code"
+                     class="discount__input">
+                  <button type="submit" class="discount__button button">Apply Code</button>
+               </div>
+            </form>
+         </div>
+      </section>
+      <section class="page__crisp crisp">
+         <div class="crisp__wrapper wrapper wrapper_606">
+            <h2 class="crisp__title">Shipping Address</h2>
+            <form action="#" class="crisp__form form-crisp" method="post">
+               <div class="form-crisp__email card-crisp">
+                  <label for="email_1" class="card-crisp__label">Email Address</label>
+                  <input required autocomplete="off" id="email_1" type="email" name="form[]" data-error="Помилка"
+                     placeholder="roni_cost@example.com" class="card-crisp__input">
+               </div>
+               <div class="form-crisp__pass card-crisp">
+                  <label for="pass_1" class="card-crisp__label">Password</label>
+                  <input required autocomplete="off" id="pass_1" type="password" name="form[]" data-error="Помилка"
+                     placeholder="******************" class="card-crisp__input">
+               </div>
+               <div class="form-crisp__zip card-crisp">
+                  <label for="zip_1" class="card-crisp__label">Zip/Postal Code</label>
+                  <input autocomplete="off" id="zip_1" type="text" name="form[]" data-error="Помилка" placeholder=""
+                     class="card-crisp__input">
+               </div>
+               <div class="form-crisp__text">You already have an account with us. Sign in or continue as guest.</div>
+               <div class="from-crisp__actions actions-crisp">
+                  <button type="submit" class="actions-crisp__button button-crisp">login</button>
+                  <button type="reset" class="actions-crisp__forgot">Forgot Your Password?</button>
+               </div>
+            </form>
+            <form action="#" class="crisp-methods form-methods" method="get">
+               <div class="form-methods__firstname card-crisp">
+                  <label for="firstname" class="card-crisp__label">First Name</label>
+                  <input required id="firstname" autocomplete="off" type="text" name="form[]" data-error="Помилка"
+                     placeholder="" class="card-crisp__input">
+               </div>
+               <div class="form-methods__lastname card-crisp">
+                  <label for="lastname" class="card-crisp__label">Last Name</label>
+                  <input required id="lastname" autocomplete="off" type="text" name="form[]" data-error="Помилка"
+                     placeholder="" class="card-crisp__input">
+               </div>
+               <div class="form-methods__company card-crisp">
+                  <label for="company" class="card-crisp__label">Company</label>
+                  <input id="company" autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder=""
+                     class="card-crisp__input">
+               </div>
+               <div class="form-methods__adress card-crisp">
+                  <label for="adress" class="card-crisp__label">Street Address</label>
+                  <div class="card-crisp__inputs adress-card">
+                     <input required id="adress" autocomplete="off" type="text" name="form[]" data-error="Помилка"
+                        placeholder="" class="adress-card__input card-crisp__input">
+                     <input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder=""
+                        class="adress-card__input card-crisp__input">
+                     <input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder=""
+                        class="adress-card__input card-crisp__input">
+                  </div>
+               </div>
+               <div class="form-methods__country card-crisp">
+                  <label for="country" class="card-crisp__label">Country</label>
+                  <input required id="country" autocomplete="off" type="text" name="form[]" data-error="Помилка"
+                     placeholder="" class="card-crisp__input">
+               </div>
+               <div class="form-methods__state card-crisp">
+                  <label for="state" class="card-crisp__label">State/Province</label>
+                  <select required id="state" class="card-crisp__select">
+                     <option value="">Please select a region, state or province</option>
+                     <option value="2">Argentina</option>
+                     <option value="3">USA</option>
+                     <option value="4">Mexico</option>
+                     <option value="5">Canada</option>
+                  </select>
+               </div>
+               <div class="form-methods__shipping shipping-form">
+                  <h2 class="shipping-form__title">Shipping Methods</h2>
+                  <div class="shipping-form__metods">
+                     <div class="shipping-form__table table-shipping">
+                        <div class="table-shipping__column column-shipping">
+                           <input checked id="fix" type="radio" name="form[]" data-error="Помилка"
+                              class="column-shipping__input">
+                           <label for="fix" class="column-shipping__label">$5.00</label>
+                        </div>
+                        <div class="table-shipping__column">Fixed</div>
+                        <div class="table-shipping__column">Flat Rate</div>
+                     </div>
+                     <div class="shipping-form__table table-shipping">
+                        <div class="table-shipping__column column-shipping">
+                           <input id="table" type="radio" name="form[]" data-error="Помилка"
+                              class="column-shipping__input">
+                           <label for="table" class="column-shipping__label">$10.00</label>
+                        </div>
+                        <div class="table-shipping__column">Table Rate</div>
+                        <div class="table-shipping__column">Best Way</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-methods__buttons buttons-form">
+                  <button type="submit" class="buttons-form__button button-crisp">next</button>
+                  <button type="reset" class="buttons-form__back">Back</button>
+               </div>
+            </form>
+         </div>
+      </section>
+   </main>
+</body>
+
+</html>
