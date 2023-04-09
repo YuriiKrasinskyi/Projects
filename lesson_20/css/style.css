@@ -327,6 +327,9 @@ svg path {
   font-weight: 300;
   font-size: 1.125rem;
   line-height: 1.5;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .card__price {
@@ -1208,6 +1211,9 @@ svg path {
 
 .item-blog__link-title {
   line-height: 1.5;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .item-blog__text {
@@ -3264,6 +3270,10 @@ svg path {
             transform: scale(1.03);
   }
 
+  .card__link-title:hover {
+    color: #eb5757;
+  }
+
   .menu__item:hover .menu__link::after {
     bottom: -0.3125rem;
     left: 50%;
@@ -3304,6 +3314,10 @@ svg path {
     background-color: #eb5757;
     color: #fff;
     border: 0.125rem solid #eb5757;
+  }
+
+  .item-blog__link-title:hover {
+    color: #eb5757;
   }
 }
 
