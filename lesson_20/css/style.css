@@ -996,19 +996,19 @@ svg path {
           transform: translateX(-50%);
 }
 
-.form-sidebar__body:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.form-sidebar__title {
+.sidebar__title {
   display: inline-block;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2.8333333333;
 }
 
-.form-sidebar__title:not(:last-child) {
+.sidebar__title:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.form-sidebar__body:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .form__body {
@@ -1868,7 +1868,7 @@ svg path {
             order: 3;
   }
 
-  .form-sidebar__title {
+  .sidebar__title {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -2169,7 +2169,7 @@ svg path {
     grid-template-columns: repeat(auto-fit, minmax(8.6875rem, 1fr));
   }
 
-  .form-sidebar__title {
+  .sidebar__title {
     font-size: 1.125rem;
     line-height: 1;
   }
