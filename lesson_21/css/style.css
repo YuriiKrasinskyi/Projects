@@ -800,7 +800,7 @@ svg path {
 }
 
 .topics__container {
-  padding-bottom: 1.25rem;
+  padding-bottom: 3.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1094,7 +1094,7 @@ svg path {
   }
 
   .topics__container {
-    padding-top: 5rem;
+    padding-top: 4.5625rem;
   }
 
   .topics__container {
@@ -1118,7 +1118,7 @@ svg path {
   }
 
   .world {
-    padding-top: 6.25rem;
+    padding-top: 4.5625rem;
   }
 
   .world {
@@ -1164,7 +1164,7 @@ svg path {
   }
 
   .categories {
-    padding-bottom: 1.25rem;
+    padding-bottom: 3.125rem;
   }
 
   .categories__top:not(:last-child) {
@@ -1204,7 +1204,7 @@ svg path {
   }
 
   .world {
-    padding-bottom: 1.25rem;
+    padding-bottom: 3.125rem;
   }
 
   .world__title:not(:last-child) {
@@ -1563,15 +1563,15 @@ svg path {
     }
 }
 
-@supports (padding-bottom: clamp( 1.25rem , -0.4342105263rem  +  8.4210526316vw , 6.25rem )) {
+@supports (padding-bottom: clamp( 3.125rem , 2.0723684211rem  +  5.2631578947vw , 6.25rem )) {
     .categories {
-      padding-bottom: clamp( 1.25rem , -0.4342105263rem  +  8.4210526316vw , 6.25rem );
+      padding-bottom: clamp( 3.125rem , 2.0723684211rem  +  5.2631578947vw , 6.25rem );
     }
 }
 
-@supports not (padding-bottom: clamp( 1.25rem , -0.4342105263rem  +  8.4210526316vw , 6.25rem )) {
+@supports not (padding-bottom: clamp( 3.125rem , 2.0723684211rem  +  5.2631578947vw , 6.25rem )) {
     .categories {
-      padding-bottom: calc(1.25rem + 5 * (100vw - 20rem) / 59.375);
+      padding-bottom: calc(3.125rem + 3.125 * (100vw - 20rem) / 59.375);
     }
 }
 
@@ -1599,15 +1599,15 @@ svg path {
     }
 }
 
-@supports (padding-top: clamp( 1.25rem , -0.0131578947rem  +  6.3157894737vw , 5rem )) {
+@supports (padding-top: clamp( 1.25rem , 0.1342105263rem  +  5.5789473684vw , 4.5625rem )) {
     .topics__container {
-      padding-top: clamp( 1.25rem , -0.0131578947rem  +  6.3157894737vw , 5rem );
+      padding-top: clamp( 1.25rem , 0.1342105263rem  +  5.5789473684vw , 4.5625rem );
     }
 }
 
-@supports not (padding-top: clamp( 1.25rem , -0.0131578947rem  +  6.3157894737vw , 5rem )) {
+@supports not (padding-top: clamp( 1.25rem , 0.1342105263rem  +  5.5789473684vw , 4.5625rem )) {
     .topics__container {
-      padding-top: calc(1.25rem + 3.75 * (100vw - 20rem) / 59.375);
+      padding-top: calc(1.25rem + 3.3125 * (100vw - 20rem) / 59.375);
     }
 }
 
@@ -1671,27 +1671,27 @@ svg path {
     }
 }
 
-@supports (padding-top: clamp( 4.375rem , 3.7434210526rem  +  3.1578947368vw , 6.25rem )) {
+@supports (padding-top: clamp( 4.375rem , 4.3118421053rem  +  0.3157894737vw , 4.5625rem )) {
     .world {
-      padding-top: clamp( 4.375rem , 3.7434210526rem  +  3.1578947368vw , 6.25rem );
+      padding-top: clamp( 4.375rem , 4.3118421053rem  +  0.3157894737vw , 4.5625rem );
     }
 }
 
-@supports not (padding-top: clamp( 4.375rem , 3.7434210526rem  +  3.1578947368vw , 6.25rem )) {
+@supports not (padding-top: clamp( 4.375rem , 4.3118421053rem  +  0.3157894737vw , 4.5625rem )) {
     .world {
-      padding-top: calc(4.375rem + 1.875 * (100vw - 20rem) / 59.375);
+      padding-top: calc(4.375rem + 0.1875 * (100vw - 20rem) / 59.375);
     }
 }
 
-@supports (padding-bottom: clamp( 1.25rem , -0.4342105263rem  +  8.4210526316vw , 6.25rem )) {
+@supports (padding-bottom: clamp( 3.125rem , 2.0723684211rem  +  5.2631578947vw , 6.25rem )) {
     .world {
-      padding-bottom: clamp( 1.25rem , -0.4342105263rem  +  8.4210526316vw , 6.25rem );
+      padding-bottom: clamp( 3.125rem , 2.0723684211rem  +  5.2631578947vw , 6.25rem );
     }
 }
 
-@supports not (padding-bottom: clamp( 1.25rem , -0.4342105263rem  +  8.4210526316vw , 6.25rem )) {
+@supports not (padding-bottom: clamp( 3.125rem , 2.0723684211rem  +  5.2631578947vw , 6.25rem )) {
     .world {
-      padding-bottom: calc(1.25rem + 5 * (100vw - 20rem) / 59.375);
+      padding-bottom: calc(3.125rem + 3.125 * (100vw - 20rem) / 59.375);
     }
 }
 
