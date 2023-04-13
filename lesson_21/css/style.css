@@ -1069,6 +1069,10 @@ svg path {
     font-size: 1.5625rem;
   }
 
+  .copy {
+    padding-top: 2.5rem;
+  }
+
   .main__title {
     font-size: 1.5625rem;
   }
@@ -1145,6 +1149,10 @@ svg path {
 
   .article__link-title {
     font-size: 1.125rem;
+  }
+
+  .copy {
+    padding-top: 0.0000000625rem;
   }
 
   .main__title {
@@ -1516,6 +1524,18 @@ svg path {
 @supports not (font-size: clamp( 1.125rem , 0.9776315789rem  +  0.7368421053vw , 1.5625rem )) {
     .article__link-title {
       font-size: calc(1.125rem + 0.4375 * (100vw - 20rem) / 59.375);
+    }
+}
+
+@supports (padding-top: clamp( 0.0000000625rem , -0.8421051796rem  +  4.2105262105vw , 2.5rem )) {
+    .copy {
+      padding-top: clamp( 0.0000000625rem , -0.8421051796rem  +  4.2105262105vw , 2.5rem );
+    }
+}
+
+@supports not (padding-top: clamp( 0.0000000625rem , -0.8421051796rem  +  4.2105262105vw , 2.5rem )) {
+    .copy {
+      padding-top: calc(0.0000000625rem + 2.4999999375 * (100vw - 20rem) / 59.375);
     }
 }
 
