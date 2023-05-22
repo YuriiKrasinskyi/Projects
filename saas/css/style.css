@@ -1129,10 +1129,6 @@ body::after {
   margin-bottom: 1.25rem;
 }
 
-.testimonials__slider {
-  min-width: 0;
-}
-
 .testimonials__arrows {
   -ms-grid-column-align: center;
       justify-self: center;
@@ -1854,16 +1850,7 @@ body::after {
 
 @media (max-width: 30em) {
   .footer__main {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-
-  .footer__column:first-child {
-    margin-bottom: 1.25rem;
-  }
-
-  .footer__column:last-child {
-    margin-bottom: 1.25rem;
+    display: block;
   }
 }
 
@@ -2203,7 +2190,7 @@ body::after {
   }
 
   .contacts__top {
-    padding-bottom: 1.875rem;
+    padding-bottom: 2.5rem;
   }
 
   .contacts__bottom {
@@ -2340,6 +2327,10 @@ body::after {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .testimonials__arrows {
+    display: none;
+  }
 }
 
 @media (max-width: 47.99875em) {
@@ -2462,7 +2453,7 @@ body::after {
   }
 
   .social-footer__link {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .main__container {
@@ -2482,10 +2473,6 @@ body::after {
 
   .testimonials__title {
     margin-bottom: 0rem;
-  }
-
-  .testimonials__arrows {
-    display: none;
   }
 
   .contacts__top {
@@ -2524,6 +2511,10 @@ body::after {
 @media (max-width: 29.99875em) {
   .form-contacts__button {
     max-width: 100%;
+  }
+
+  .footer__column:first-child {
+    margin-bottom: 1.25rem;
   }
 
   .main__image {
@@ -3551,15 +3542,15 @@ body::after {
     }
 }
 
-@supports (padding-bottom: clamp( 1.875rem , 0.8977272727rem  +  4.8863636364vw , 4.5625rem )) {
+@supports (padding-bottom: clamp( 2.5rem , 1.75rem  +  3.75vw , 4.5625rem )) {
     .contacts__top {
-      padding-bottom: clamp( 1.875rem , 0.8977272727rem  +  4.8863636364vw , 4.5625rem );
+      padding-bottom: clamp( 2.5rem , 1.75rem  +  3.75vw , 4.5625rem );
     }
 }
 
-@supports not (padding-bottom: clamp( 1.875rem , 0.8977272727rem  +  4.8863636364vw , 4.5625rem )) {
+@supports not (padding-bottom: clamp( 2.5rem , 1.75rem  +  3.75vw , 4.5625rem )) {
     .contacts__top {
-      padding-bottom: calc(1.875rem + 2.6875 * (100vw - 20rem) / 55);
+      padding-bottom: calc(2.5rem + 2.0625 * (100vw - 20rem) / 55);
     }
 }
 

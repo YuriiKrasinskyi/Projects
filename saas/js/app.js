@@ -3608,7 +3608,8 @@
                 },
                 992: {
                     slidesPerView: 3,
-                    spaceBetween: 20
+                    spaceBetween: 20,
+                    navigation: false
                 },
                 1268: {
                     slidesPerView: 3,
