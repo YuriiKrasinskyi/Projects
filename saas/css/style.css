@@ -613,10 +613,6 @@ body::after {
   display: grid;
   -ms-grid-columns: 16.875rem (1fr)[3] auto;
   grid-template-columns: 16.875rem repeat(3, 1fr) auto;
-  -webkit-column-gap: 1.25rem;
-     -moz-column-gap: 1.25rem;
-          column-gap: 1.25rem;
-  row-gap: 3.125rem;
 }
 
 .footer__logo {
@@ -1440,6 +1436,16 @@ body::after {
     margin-bottom: 6.25rem;
   }
 
+  .footer__main {
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+  }
+
+  .footer__main {
+    row-gap: 3.125rem;
+  }
+
   .footer__logo {
     margin-bottom: 1.3125rem;
   }
@@ -1850,7 +1856,6 @@ body::after {
   .footer__main {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    gap: 0rem;
   }
 
   .footer__column:first-child {
@@ -1911,6 +1916,16 @@ body::after {
 
   .footer__container {
     margin-bottom: 0.9375rem;
+  }
+
+  .footer__main {
+    -webkit-column-gap: 0.625rem;
+       -moz-column-gap: 0.625rem;
+            column-gap: 0.625rem;
+  }
+
+  .footer__main {
+    row-gap: 0.625rem;
   }
 
   .footer__logo {
@@ -2685,6 +2700,34 @@ body::after {
 @supports not (margin-bottom: clamp( 0.9375rem , -0.9943181818rem  +  9.6590909091vw , 6.25rem )) {
     .footer__container {
       margin-bottom: calc(0.9375rem + 5.3125 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports ((-moz-column-gap: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem )) or (column-gap: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem ))) {
+    .footer__main {
+      -webkit-column-gap: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem );
+         -moz-column-gap: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem );
+              column-gap: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem );
+    }
+}
+
+@supports not ((-moz-column-gap: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem )) or (column-gap: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem ))) {
+    .footer__main {
+      -webkit-column-gap: calc(0.625rem + 0.625 * (100vw - 20rem) / 55);
+         -moz-column-gap: calc(0.625rem + 0.625 * (100vw - 20rem) / 55);
+              column-gap: calc(0.625rem + 0.625 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (row-gap: clamp( 0.625rem , -0.2840909091rem  +  4.5454545455vw , 3.125rem )) {
+    .footer__main {
+      row-gap: clamp( 0.625rem , -0.2840909091rem  +  4.5454545455vw , 3.125rem );
+    }
+}
+
+@supports not (row-gap: clamp( 0.625rem , -0.2840909091rem  +  4.5454545455vw , 3.125rem )) {
+    .footer__main {
+      row-gap: calc(0.625rem + 2.5 * (100vw - 20rem) / 55);
     }
 }
 
