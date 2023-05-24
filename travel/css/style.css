@@ -326,8 +326,6 @@ svg path {
 }
 
 .header__logo {
-  position: relative;
-  z-index: 5;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.1666666667;
