@@ -792,16 +792,6 @@ svg path {
   }
 }
 
-@media (max-width: 30em) {
-  .form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-  }
-}
-
 @media (max-width: 20em) {
   .header__container {
     gap: 0.625rem;
@@ -1066,6 +1056,16 @@ svg path {
 @media (max-width: 47.99875em) and (any-hover: none) {
   .icon-menu {
     cursor: default;
+  }
+}
+
+@media (max-width: 35.4375em) {
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 18.125rem;
   }
 }
 
