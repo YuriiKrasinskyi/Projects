@@ -1,179 +1,568 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<title>Growfy</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230602030626">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «growfy»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «growfy»</h1>
-		<div class="rootpage__info">
-			Опис проєкту
-		</div>
-		<h2>Готові сторінки:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Головна</a></li>
-		</ol>
-		<h2>Попапи:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Дякую за замовлення!</h2>
-			<p>Буду радий (да) гарному відгуку.</p>
-			<p>Звертайтесь ще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мої контакти:</h2>
-			<p>Пошта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. мережі: <a href="">посилання</a></p>
-		</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</a>
+				<nav class="header__menu menu">
+					<div class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">About</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Pages</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Services</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="header__actions actions-header">
+					<a href="#" class="header__cart cart-header">
+						<span class="cart-header__text">Cart</span>
+						<span class="cart-header__quantuty">0</span>
+					</a>
+					<a href="#" class="header__button button">Get started</a>
+					<button class="icon-menu" type="button"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main main">
+				<div class="main__container">
+					<div class="main__content">
+						<div class="main__header header-main">
+							<h1 class="header-main__title">
+								Marketing solutions that grow your business.
+							</h1>
+							<div class="header-main__text">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+									suspendisse varius enim in eros elementum tristique. Duis
+									cursus, mi quis viverra ornare, eros dolor.
+								</p>
+							</div>
+							<div class="header-main__actions">
+								<a href="#" class="header-main__button button">Our services</a>
+								<a href="#" class="header-main__button button button_dark">Contact us</a>
+							</div>
+						</div>
+					</div>
+					<div class="main__images images-main">
+						<div class="images-main__column">
+							<div class="images-main__item images-main__item_1">
+								<picture><source srcset="img/main/01.webp" type="image/webp"><img src="img/main/01.jpg" alt="Image"></picture>
+							</div>
+							<div class="images-main__item images-main__item_2">
+								<picture><source srcset="img/main/02.webp" type="image/webp"><img src="img/main/02.jpg" alt="Image"></picture>
+							</div>
+						</div>
+						<div class="images-main__column">
+							<div class="images-main__item images-main__item_3">
+								<picture><source srcset="img/main/03.webp" type="image/webp"><img src="img/main/03.jpg" alt="Image"></picture>
+							</div>
+							<div class="images-main__item images-main__item_4">
+								<picture><source srcset="img/main/04.webp" type="image/webp"><img src="img/main/04.jpg" alt="Image"></picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__clients clients">
+				<div class="clients__container">
+					<h2 class="clients__title">
+						TRUSTED BY startups and large enterprises
+					</h2>
+					<div class="clients__items">
+						<div class="client__item">
+							<img src="img/clients/01.svg" alt="Image">
+						</div>
+						<div class="client__item">
+							<img src="img/clients/02.svg" alt="Image">
+						</div>
+						<div class="client__item">
+							<img src="img/clients/03.svg" alt="Image">
+						</div>
+						<div class="client__item">
+							<img src="img/clients/04.svg" alt="Image">
+						</div>
+						<div class="client__item">
+							<img src="img/clients/05.svg" alt="Image">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__services services">
+				<div class="services__container">
+					<div class="services__header header-main">
+						<a href="#" class="header-main__label">Services</a>
+						<h2 class="header-main__title">Services we offer</h2>
+						<div class="header-main__text">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+								suspendisse varius enim in eros elementum tristique. Duis
+								cursus, mi quis viverra ornare, eros dolor.
+							</p>
+						</div>
+						<div class="header-main__actions">
+							<a href="#" class="header-main__button button">All services</a>
+						</div>
+					</div>
+					<div class="services__items">
+						<div class="services__column">
+							<article class="services__item item-service">
+								<div class="item-service__icon">
+									<img src="img/services/01.svg" alt="Image">
+								</div>
+								<h4 class="item-service__title">
+									<a href="#" class="item-service__link-title">Social Media Marketing</a>
+								</h4>
+								<div class="item-service__text text">
+									<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+										lobortis arcu enim urna adipiscing praesent velit.</p>
+								</div>
+							</article>
+							<article class="services__item item-service">
+								<div class="item-service__icon">
+									<img src="img/services/02.svg" alt="Image">
+								</div>
+								<h4 class="item-service__title">
+									<a href="#" class="item-service__link-title">Email Marketing</a>
+								</h4>
+								<div class="item-service__text text">
+									<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+										lobortis arcu enim urna adipiscing praesent velit.</p>
+								</div>
+							</article>
+						</div>
+						<div class="services__column">
+							<article class="services__item item-service">
+								<div class="item-service__icon">
+									<img src="img/services/03.svg" alt="Image">
+								</div>
+								<h4 class="item-service__title">
+									<a href="#" class="item-service__link-title">Paid Advertising</a>
+								</h4>
+								<div class="item-service__text text">
+									<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+										lobortis arcu enim urna adipiscing praesent velit.</p>
+								</div>
+							</article>
+							<article class="services__item item-service">
+								<div class="item-service__icon">
+									<img src="img/services/04.svg" alt="Image">
+								</div>
+								<h4 class="item-service__title">
+									<a href="#" class="item-service__link-title">SEO Optimization</a>
+								</h4>
+								<div class="item-service__text text">
+									<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+										lobortis arcu enim urna adipiscing praesent velit.</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__choose choose">
+				<div class="choose__container">
+					<div class="choose__images images-choose">
+						<div class="images-choose__item images-choose__item_1">
+							<picture><source srcset="img/choose/01.webp" type="image/webp"><img src="img/choose/01.jpg" alt="Image"></picture>
+						</div>
+						<div class="images-choose__item images-choose__item_2">
+							<picture><source srcset="img/choose/02.webp" type="image/webp"><img src="img/choose/02.jpg" alt="Image"></picture>
+						</div>
+					</div>
+					<div class="choose__content">
+						<div class="choose__header header-main">
+							<a href="#" class="header-main__label">why choose us</a>
+							<h1 class="header-main__title">We help great brands
+								scale with content marketing.</h1>
+							<div class="header-main__text">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+									suspendisse varius enim in eros elementum tristique. Duis
+									cursus, mi quis viverra ornare, eros dolor.
+								</p>
+							</div>
+							<ul class="header-main__list">
+								<li class="header-main__item">This is some text inside of a div.</li>
+								<li class="header-main__item">This is some text inside of a div.</li>
+								<li class="header-main__item">This is some text inside of a div.</li>
+								<li class="header-main__item">This is some text inside of a div.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__advantages advantages">
+				<div class="advantages__container">
+					<h2 class="advantages__title">advantages</h2>
+					<div class="advantages__items">
+						<article class="advantages__item item-advantages">
+							<h4 class="item-advantages__value">1.2M+</h4>
+							<div class="item-advantages__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.</p>
+							</div>
+						</article>
+						<article class="advantages__item item-advantages">
+							<h4 class="item-advantages__value">3.4B</h4>
+							<div class="item-advantages__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.</p>
+							</div>
+						</article>
+						<article class="advantages__item item-advantages">
+							<h4 class="item-advantages__value">98%</h4>
+							<div class="item-advantages__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.</p>
+							</div>
+						</article>
+						<article class="advantages__item item-advantages">
+							<h4 class="item-advantages__value">10+</h4>
+							<div class="item-advantages__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.</p>
+							</div>
+						</article>
+					</div>
+					<div class="advantages__image">
+						<picture><source srcset="img/advantages/01.webp" type="image/webp"><img src="img/advantages/01.jpg" alt="Image"></picture>
+					</div>
+				</div>
+			</section>
+			<section class="page__testmonials testmonials">
+				<div class="testmonials__container">
+					<div class="testmonials__header header-main">
+						<a href="#" class="header-main__label">testimonials</a>
+						<h2 class="header-main__title">See what our clients say</h2>
+						<div class="header-main__body">
+							<div class="header-main__text">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+									suspendisse varius enim in eros elementum tristique. Duis
+									cursus, mi quis viverra ornare, eros dolor.
+								</p>
+							</div>
+							<div class="header-main__actions">
+								<a href="#" class="header-main__button button">Get in touch</a>
+							</div>
+						</div>
+					</div>
+					<div class="testmonials__items">
+						<article class="testmonials__item item-testmonials">
+							<div class="item-testmonials__user user-testmonials">
+								<div class="user-testmonials__image user-testmonials__image_1">
+									<picture><source srcset="img/testmonials/01.webp" type="image/webp"><img src="img/testmonials/01.jpg" alt="Image"></picture>
+								</div>
+								<div class="user-testmonials__body">
+									<div class="user-testmonials__name">Alice Smith</div>
+									<div class="user-testmonials__company">Company Name</div>
+								</div>
+							</div>
+							<h5 class="item-testmonials__title">
+								<a href="#" class="item-testmonials__link-title">"I recommend this agency"</a>
+							</h5>
+							<div class="item-testmonials__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+									elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+									commodo diam libero.</p>
+							</div>
+							<div class="item-testmonials__rating rating_set">
+								<div class="rating__body">
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="testmonials__item item-testmonials">
+							<div class="item-testmonials__user user-testmonials">
+								<div class="user-testmonials__image user-testmonials__image_2">
+									<picture><source srcset="img/testmonials/01.webp" type="image/webp"><img src="img/testmonials/01.jpg" alt="Image"></picture>
+								</div>
+								<div class="user-testmonials__body">
+									<div class="user-testmonials__name">Alice Smith</div>
+									<div class="user-testmonials__company">Company Name</div>
+								</div>
+							</div>
+							<h5 class="item-testmonials__title">
+								<a href="#" class="item-testmonials__link-title">"The support is awesome"</a>
+							</h5>
+							<div class="item-testmonials__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+									elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+									commodo diam libero.</p>
+							</div>
+							<div class="item-testmonials__rating rating_set">
+								<div class="rating__body">
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="testmonials__item item-testmonials">
+							<div class="item-testmonials__user user-testmonials">
+								<div class="user-testmonials__image user-testmonials__image_3">
+									<picture><source srcset="img/testmonials/03.webp" type="image/webp"><img src="img/testmonials/03.jpg" alt="Image"></picture>
+								</div>
+								<div class="user-testmonials__body">
+									<div class="user-testmonials__name">Sophia Miller</div>
+									<div class="user-testmonials__company">Company Name</div>
+								</div>
+							</div>
+							<h5 class="item-testmonials__title">
+								<a href="#" class="item-testmonials__link-title">“A game changer for us”</a>
+							</h5>
+							<div class="item-testmonials__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+									elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+									commodo diam libero.</p>
+							</div>
+							<div class="item-testmonials__rating rating_set">
+								<div class="rating__body">
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__blog blog">
+				<div class="blog__container">
+					<div class="blog__header header-main">
+						<a href="#" class="header-main__label">Blog</a>
+						<h2 class="header-main__title">Read our
+							articles & news</h2>
+						<div class="header-main__body">
+							<div class="header-main__text">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+									suspendisse varius enim in eros elementum tristique. Duis
+									cursus, mi quis viverra ornare, eros dolor.
+								</p>
+							</div>
+							<div class="header-main__actions">
+								<a href="#" class="header-main__button button">All Posts</a>
+							</div>
+						</div>
+					</div>
+					<div class="blog__items">
+						<article class="blog__item item-blog">
+							<div class="item-blog__header">
+								<a href="#" class="item-blog__image-ibg">
+									<picture><source srcset="img/blog/01.webp" type="image/webp"><img src="img/blog/01.jpg" alt="Image"></picture>
+								</a>
+								<a href="#" class="item-blog__category">Social Media</a>
+							</div>
+							<div class="item-blog__body">
+								<div class="item-blog__date">August 28, 2022</div>
+								<h4 class="item-blog__title">
+									<a href="#" class="item-blog__link-title">How to Use Social Proof in Marketing</a>
+								</h4>
+								<div class="item-blog__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing
+										praesent velit viverra sit semper lorem.</p>
+								</div>
+								<a href="#" class="item-blog__link">Read now</a>
+							</div>
+						</article>
+						<article class="blog__item item-blog">
+							<div class="item-blog__header">
+								<a href="#" class="item-blog__image-ibg">
+									<picture><source srcset="img/blog/02.webp" type="image/webp"><img src="img/blog/02.jpg" alt="Image"></picture>
+								</a>
+								<a href="#" class="item-blog__category">Social Media</a>
+							</div>
+							<div class="item-blog__body">
+								<div class="item-blog__date">August 28, 2022</div>
+								<h4 class="item-blog__title">
+									<a href="#" class="item-blog__link-title">Make a great first impression with these titles</a>
+								</h4>
+								<div class="item-blog__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing
+										praesent velit viverra sit semper lorem.</p>
+								</div>
+								<a href="#" class="item-blog__link">Read now</a>
+							</div>
+						</article>
+						<article class="blog__item item-blog">
+							<div class="item-blog__header">
+								<a href="#" class="item-blog__image-ibg">
+									<picture><source srcset="img/blog/03.webp" type="image/webp"><img src="img/blog/03.jpg" alt="Image"></picture>
+								</a>
+								<a href="#" class="item-blog__category">Social Media</a>
+							</div>
+							<div class="item-blog__body">
+								<div class="item-blog__date">August 28, 2022</div>
+								<h4 class="item-blog__title">
+									<a href="#" class="item-blog__link-title">How to Grab Your Reader’s Attention</a>
+								</h4>
+								<div class="item-blog__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing
+										praesent velit viverra sit semper lorem.</p>
+								</div>
+								<a href="#" class="item-blog__link">Read now</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__start start">
+				<div class="start__container">
+					<div class="start__content">
+						<div class="start__column">
+							<h3 class="start__title">Ready to start scaling your business now?</h3>
+							<div class="start__text">
+								<p>Lorem ipsum dolor sit am consectetur adipiscing varius enim in eros.</p>
+							</div>
+						</div>
+						<div class="start__column">
+							<div class="start__actions">
+								<a href="#" class="start__button button button">Our services</a>
+								<a href="#" class="start__button button button button_dark">Contact us</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__main main-footer">
+				<div class="main-footer__container">
+					<div class="main-footer__column">
+						<a href="#" class="main-footer__logo">
+							<img src="img/logo.svg" alt="Logo">
+						</a>
+						<div class="main-footer__text">
+							<p>Growfy is a template highly suitable for modern marketing agencies, digital studios, startups and
+								businesses. The design is made in the dark style, which makes the site memorable and you can easily
+								adapt it to your brand.</p>
+						</div>
+						<div class="main-footer__social social">
+							<ul class="social__list">
+								<li class="social__item">
+									<a href="https://www.linkedin.com/" target="_blank" class="social__link _icon-in"></a>
+								</li>
+								<li class="social__item">
+									<a href="https://www.twitter.com/" target="_blank" class="social__link _icon-tw"></a>
+								</li>
+								<li class="social__item">
+									<a href="https://www.facebook.com/" target="_blank" class="social__link _icon-fb"></a>
+								</li>
+								<li class="social__item">
+									<a href="https://www.yotube.com/" target="_blank" class="social__link _icon-youtube"></a>
+								</li>
+								<li class="social__item">
+									<a href="https://www.instagram.com/" target="_blank" class="social__link _icon-ins"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="main-footer__column">
+						<div class="main-footer__title">Pages</div>
+						<nav class="main-footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Home</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">About</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Services</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Packages</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Blog</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="main-footer__column">
+						<div class="main-footer__title">Utility pages</div>
+						<nav class="main-footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Instructions</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Style guide</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Licenses</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Changelog</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">404 Not found</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Password protected</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="main-footer__column">
+						<div class="main-footer__title">Subscribe to our newsletter</div>
+						<div class="main-footer__text">
+							<p>Lorem ipsum dolor sit am consectetur adipiscing</p>
+						</div>
+						<form action="#" class="main-footer__form form">
+							<input autocomplete="off" data-required="email" type="email" name="form[]" data-error="error" placeholder="Enter your email" class="form__input">
+							<button type="submit" class="form__button button">Subscribe</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom bottom-footer">
+				<div class="bottom-footer__container">
+					<div class="bottom-footer__copy">© 2022</div>
+				</div>
+			</div>
+		</footer>
 	</div>
+	<script src="js/app.min.js?_v=20230602030626"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
