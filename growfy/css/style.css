@@ -215,6 +215,7 @@ body {
   border-radius: 3.125rem;
   padding: 0.9375rem 2.0625rem;
   background-color: transparent;
+  color: #999999;
 }
 
 .form__input::-webkit-input-placeholder {
