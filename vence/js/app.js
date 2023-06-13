@@ -3631,7 +3631,7 @@
             slidesPerView: 1,
             slideToClickedSlide: true,
             spaceBetween: 0,
-            autoHeight: true,
+            autoHeight: false,
             speed: 800,
             pagination: {
                 el: ".swiper-pagination",
