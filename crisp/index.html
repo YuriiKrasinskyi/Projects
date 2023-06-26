@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230605104047">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230626170810">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,8 +41,11 @@
 						</ul>
 					</nav>
 					<form data-da=".header__actions, 767.98" action="#" class="header__search search-header">
-						<button type="submit" class="search-header__button _icon-search1"></button>
-						<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="search" class="search-header__input">
+						<div class="search-header__body">
+							<button type="submit" class="search-header__button _icon-search1"></button>
+							<input autocomplete="off" type="text" name="form[]" required placeholder="search" class="search-header__input">
+						</div>
+						<button type="button" class="search-header__icon _icon-search1"></button>
 					</form>
 				</div>
 				<div class="header__actions actions-header">
@@ -766,7 +769,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230605104047"></script>
+	<script src="js/app.min.js?_v=20230626170810"></script>
 </body>
 
 </html>

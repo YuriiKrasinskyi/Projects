@@ -344,6 +344,13 @@
     }
     const da = new DynamicAdapt("max");
     da.init();
+    document.addEventListener("click", (function(e) {
+        const targetElement = e.target;
+        if (targetElement.closest(".search-header__icon")) {
+            document.documentElement.classList.add("search-open");
+            e.preventDefault();
+        } else if (!targetElement.closest(".search-header")) document.documentElement.classList.remove("search-open");
+    }));
     window["FLS"] = false;
     isWebp();
     menuInit();

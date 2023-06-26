@@ -381,6 +381,7 @@ svg path {
           justify-content: space-between;
   gap: 0.625rem;
   min-height: 6.5625rem;
+  position: relative;
 }
 
 .header__logo {
@@ -392,11 +393,6 @@ svg path {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.header__actions {
-  position: relative;
-  z-index: 5;
 }
 
 .menu {
@@ -447,6 +443,23 @@ svg path {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.search-open .search-header .search-header__body {
+  opacity: 1;
+  visibility: visible;
+  background-color: #000;
+  top: 100%;
+  width: 100%;
+}
+
+.search-header__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -462,6 +475,10 @@ svg path {
   outline: none;
   color: #fff;
   width: 3.125rem;
+}
+
+.search-open .search-header__input {
+  width: 100%;
 }
 
 .search-header__input::-webkit-input-placeholder {
@@ -497,6 +514,14 @@ svg path {
   line-height: 1.5;
   text-transform: uppercase;
   color: #fff;
+}
+
+.search-header__icon {
+  font-size: 1.0625rem;
+}
+
+.search-open .search-header__icon {
+  display: none;
 }
 
 .actions-header {
@@ -1292,6 +1317,10 @@ svg path {
 }
 
 @media (min-width: 47.99875em) {
+  .search-header__icon {
+    display: none;
+  }
+
   .brand__items {
     border: 2px solid #c4c4c4;
     padding: 1.75rem 0.6875rem;
@@ -2107,14 +2136,38 @@ svg path {
             order: 1;
   }
 
+  .search-header__body {
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  .search-open .search-header__body {
+    padding: 0.625rem 0.9375rem;
+  }
+
   .search-header__button {
     font-size: 1.1875rem;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 
   .search-header__input {
-    font-size: 1.75rem;
-    width: 6.875rem;
-    display: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .search-header__icon {
+    font-size: 1.1875rem;
   }
 
   .actions-header {
