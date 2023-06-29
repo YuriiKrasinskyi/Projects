@@ -1728,6 +1728,10 @@ h6 {
   gap: 1.875rem;
 }
 
+.choice__semantic {
+  display: none;
+}
+
 .choice__sidebar {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 39%;
@@ -2183,10 +2187,6 @@ h6 {
     padding-right: 6.4375rem;
   }
 
-  .slider-main__body {
-    gap: 0.9375rem;
-  }
-
   .slider-main__title {
     font-size: 1.5625rem;
   }
@@ -2467,10 +2467,6 @@ h6 {
 
   .slider-main__slide {
     padding-right: 0.9375rem;
-  }
-
-  .slider-main__body {
-    gap: 0.625rem;
   }
 
   .slider-main__title {
@@ -3435,18 +3431,6 @@ h6 {
 @supports not (padding-right: clamp( 0.9375rem , -0.9151315789rem  +  9.2631578947vw , 6.4375rem )) {
     .slider-main__slide {
       padding-right: calc(0.9375rem + 5.5 * (100vw - 20rem) / 59.375);
-    }
-}
-
-@supports (gap: clamp( 0.625rem , 0.5197368421rem  +  0.5263157895vw , 0.9375rem )) {
-    .slider-main__body {
-      gap: clamp( 0.625rem , 0.5197368421rem  +  0.5263157895vw , 0.9375rem );
-    }
-}
-
-@supports not (gap: clamp( 0.625rem , 0.5197368421rem  +  0.5263157895vw , 0.9375rem )) {
-    .slider-main__body {
-      gap: calc(0.625rem + 0.3125 * (100vw - 20rem) / 59.375);
     }
 }
 
